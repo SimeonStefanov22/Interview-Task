@@ -1,0 +1,39 @@
+<header>
+  <h1>USERS MANAGEMENT</h1>
+</header>
+
+<nav>
+  <div class="searchForm">
+    <form role="form">
+
+      <div class="searchInput">
+        <input name="search"
+               class="searchInput"
+               type="text"
+               placeholder="Search"
+               [(ngModel)]='searchcontent'
+               (keydown.enter)='searchForm(searchcontent, myRadio)'>
+      </div>
+
+      <div class="radioButtons">
+        <div class="button">
+          <input id="name" type="radio" class="custom-control-button" value="name" name="name" [(ngModel)]="myRadio">
+          <label class="custom-control-label" for="name">Name</label>
+        </div>
+        <div class="button">
+          <input id="address" type="radio" class="custom-control-button" value="address" name="address" [(ngModel)]="myRadio">
+          <label class="custom-control-label" for="address">Address</label>
+        </div>
+        <div class="button">
+          <input id="age" type="radio" class="custom-control-button" value="age" name="age" [(ngModel)]="myRadio">
+          <label class="custom-control-label" for="age">Age</label>
+        </div>
+
+      </div>
+
+
+    </form>
+
+
+  </div>
+</nav>
