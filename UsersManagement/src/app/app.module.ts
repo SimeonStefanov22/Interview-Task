@@ -26,7 +26,8 @@ import {ListUsersService} from "./services/list-users.service";
     HttpClientModule
   ],
   exports:[
-    HeaderComponent
+    HeaderComponent,
+    ListUsersComponent
   ],
   providers: [ListUsersService],
   bootstrap: [AppComponent]

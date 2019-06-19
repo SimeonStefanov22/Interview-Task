@@ -1,0 +1,30 @@
+header {
+  display: grid;
+  justify-content: center; }
+  header h1 {
+    font-weight: 300; }
+
+form {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr;
+  margin-bottom: 1.5em; }
+  form .searchInput input {
+    width: 100%;
+    padding: 0.5em; }
+  form .radioButtons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding: 0 1em 0 1em; }
+    form .radioButtons .button {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      padding: 0 1em 0 1em;
+      align-items: center; }
+      form .radioButtons .button label {
+        font-size: 12px; }
+      form .radioButtons .button input {
+        margin-top: 0; }
+
+/*# sourceMappingURL=header.component.css.map */

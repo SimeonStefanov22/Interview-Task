@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {HttpClient} from "@angular/common/http";
+import {ListUsersService} from "../services/list-users.service";
 
 @Component({
   selector: 'app-list-users',
@@ -6,10 +8,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./list-users.component.scss']
 })
 export class ListUsersComponent implements OnInit {
+  result: any;
+  arrayOfUsers: Array<Object>;
 
-  constructor() { }
+  constructor(private httpClient: HttpClient, private usersService: ListUsersService) { }
 
   ngOnInit() {
+    this.usersService.getUsers()
+      .subscribe(data => {
+        this.result = data
+        this.arrayOfUsers = this.result.results;
+        console.log(this.arrayOfUsers);
+
+      })
   }
 
 }

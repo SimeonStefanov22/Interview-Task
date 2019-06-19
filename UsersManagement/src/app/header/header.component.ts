@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {NgForm} from "@angular/forms";
-import {HttpClient} from "@angular/common/http";
-import {ListUsersService} from "../services/list-users.service";
+
 
 
 @Component({
@@ -11,19 +9,11 @@ import {ListUsersService} from "../services/list-users.service";
 })
 export class HeaderComponent implements OnInit {
 
-  result: Object;
 
-  constructor(private httpClient: HttpClient, private usersService: ListUsersService) { }
+
+  constructor() { }
 
   ngOnInit() {
-
-    this.usersService.getUsers()
-      .subscribe(data => {
-        this.result = data;
-        console.log(this.result);
-      })
-
-
 
   }
 

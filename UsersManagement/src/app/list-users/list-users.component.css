@@ -1,0 +1,25 @@
+main {
+  border: 1px solid #a59b9b;
+  background: #D6E0ED; }
+
+article {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 1fr 3fr;
+  grid-template-rows: 1fr;
+  border-bottom: 1px solid #a59b9b; }
+  article .fullName {
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr;
+    grid-template-rows: 1fr; }
+    article .fullName p {
+      font-size: 12px; }
+  article .fullAddress {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr; }
+    article .fullAddress p {
+      font-size: 12px; }
+  article .age p {
+    font-size: 12px; }
+
+/*# sourceMappingURL=list-users.component.css.map */

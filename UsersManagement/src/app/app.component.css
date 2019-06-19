@@ -1,0 +1,8 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr auto;
+  font-family: Arial;
+  color: #a59b9b; }
+
+/*# sourceMappingURL=app.component.css.map */
