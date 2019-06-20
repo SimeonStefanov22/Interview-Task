@@ -6,19 +6,12 @@
 
     <section class="name">
       <h4>Name</h4>
-      <div class="fullName">
-        <p>{{user.name.title}}</p>
-        <p>{{user.name.first}}</p>
-        <p>{{user.name.last}}</p>
-      </div>
+      <p>{{user.name.title}} {{user.name.first}} {{user.name.last}}</p>
     </section>
 
     <section class="address">
       <h4>Address</h4>
-      <div class="fullAddress">
-        <p>{{user.location.street}}</p>
-        <p>{{user.location.city}}</p>
-      </div>
+      <p>{{user.location.street}} {{user.location.city}}</p>
     </section>
 
     <section class="age">
@@ -27,7 +20,7 @@
     </section>
 
     <section class="deleteUser">
-      <button id="{{user.id.value}}">X</button>
+      <span (click)="deleteUser()" id="{{user.id.value}}">X</span>
     </section>
 
   </article>

@@ -4,28 +4,51 @@
 
 <nav>
   <div class="searchForm">
-    <form role="form">
+    <form #search="ngForm" (keydown.enter)='searchForm(search.value)'>
+
+      <p></p>
 
       <div class="searchInput">
         <input name="search"
                class="searchInput"
                type="text"
                placeholder="Search"
-               [(ngModel)]='searchcontent'
-               (keydown.enter)='searchForm(searchcontent, myRadio)'>
+               #searchModel="ngModel"
+               ngModel>
       </div>
 
       <div class="radioButtons">
         <div class="button">
-          <input id="name" type="radio" class="custom-control-button" value="name" name="name" [(ngModel)]="myRadio">
+          <input id="name"
+                 type="radio"
+                 class="custom-control-button"
+                 value=""
+                 checked
+                 name="button"
+                 #nameModel="ngModel"
+                 ngModel>
           <label class="custom-control-label" for="name">Name</label>
         </div>
         <div class="button">
-          <input id="address" type="radio" class="custom-control-button" value="address" name="address" [(ngModel)]="myRadio">
+          <input id="address"
+                 type="radio"
+                 class="custom-control-button"
+                 value="address"
+
+                 name="button"
+                 #addressModel="ngModel"
+                 ngModel>
           <label class="custom-control-label" for="address">Address</label>
         </div>
         <div class="button">
-          <input id="age" type="radio" class="custom-control-button" value="age" name="age" [(ngModel)]="myRadio">
+          <input id="age"
+                 type="radio"
+                 class="custom-control-button"
+                 value="age"
+
+                 name="button"
+                 #ageModel="ngModel"
+                 ngModel>
           <label class="custom-control-label" for="age">Age</label>
         </div>
 

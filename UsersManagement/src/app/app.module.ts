@@ -10,6 +10,9 @@ import { HeaderComponent } from './header/header.component';
 import { ListUsersComponent } from './list-users/list-users.component';
 //Services
 import {ListUsersService} from "./services/list-users.service";
+import {SearchService} from "./services/search.service";
+
+
 
 
 @NgModule({
@@ -29,7 +32,9 @@ import {ListUsersService} from "./services/list-users.service";
     HeaderComponent,
     ListUsersComponent
   ],
-  providers: [ListUsersService],
+  providers: [ListUsersService,
+    SearchService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

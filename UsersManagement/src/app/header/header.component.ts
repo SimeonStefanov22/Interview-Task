@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-
+import {Component, OnInit} from '@angular/core';
+import {SearchService} from "../services/search.service";
 
 
 @Component({
@@ -9,18 +9,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+result:any;
 
 
-  constructor() { }
+
+
+  constructor(private searchService: SearchService) { }
 
   ngOnInit() {
 
   }
 
-  searchForm(value, myRadio){
+  searchForm(data){
+
+   // this.result = data;
+    this.searchService.search(data);
 
 
-    console.log(value, myRadio);
-}
+  }
 
 }

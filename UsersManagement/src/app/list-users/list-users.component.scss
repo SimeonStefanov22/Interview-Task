@@ -1,6 +1,8 @@
 main{
   border: 1px solid rgb(165, 155, 155);
   background: #D6E0ED;
+  display: grid;
+  grid-auto-rows: 1fr;
 
 
 }
@@ -8,34 +10,80 @@ main{
 article{
   display: grid;
   grid-template-columns: 1fr 2fr 2fr 1fr 3fr;
-  grid-template-rows: 1fr;
   border-bottom: 1px solid rgb(165, 155, 155);
+  padding: 0.5em 0.5em 0.5em 0.5em;
+
+  .image{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    img{
+      border-radius: 50%;
+    }
+  }
+  .name{
+    display: grid;
+    justify-content: center;
+    align-content: center;
 
 
-  .fullName{
-      display: grid;
-      grid-template-columns: 1fr 3fr 3fr;
-      grid-template-rows: 1fr;
+    h4{
+      margin: 0;
+      font-size: 13px;
+    }
+
     p{
       font-size: 12px;
+      margin: 0;
     }
 
   }
-  .fullAddress{
-
+  .address{
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr;
+    justify-content: center;
+    align-content: center;
+
+    h4{
+      margin: 0;
+      font-size: 13px;
+    }
+
       p{
         font-size: 12px;
+        margin: 0;
       }
   }
   .age{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+
+
+    h4{
+      margin: 0;
+      font-size: 13px;
+    }
       p{
         font-size: 12px;
+        margin: 0;
+
       }
 
     }
+  .deleteUser{
+    position: relative;
+    span{
+      position: absolute;
+      top:0;
+      right: 0;
+
+    }
+    span:hover{
+      cursor: pointer;
+      color: black;
+    }
+
+  }
 
 
 
