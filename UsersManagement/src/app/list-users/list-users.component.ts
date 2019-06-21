@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {ListUsersService} from "../services/list-users.service";
 import {SearchService} from "../services/search.service";
+import {SafeUsersService} from "../services/safe-users.service";
 
 @Component({
   selector: 'app-list-users',
@@ -11,13 +12,14 @@ import {SearchService} from "../services/search.service";
 export class ListUsersComponent implements OnInit {
   result: any;
   arrayOfUsers: Array<Object>;
-  arrayOfSearchUsers: Array<Object> = [];
-  searchValue: string;
-  radioButtonValue: string;
-  user: Object;
-  userAge: string;
+  searchUsers: Array<Object>;
 
-  constructor(private httpClient: HttpClient, private usersService: ListUsersService, private searchService: SearchService) { }
+
+
+  constructor(private httpClient: HttpClient,
+              private usersService: ListUsersService,
+              private safeUsersService: SafeUsersService,
+              private searchService: SearchService) { }
 
   ngOnInit() {
     this.usersService.getUsers()
@@ -25,39 +27,18 @@ export class ListUsersComponent implements OnInit {
         this.result = data
         this.arrayOfUsers = this.result.results;
         console.log(this.arrayOfUsers);
+        this.safeUsersService.safeUsers(this.arrayOfUsers);
 
       })
   }
   ngDoCheck(){
-    this.searchValue = this.searchService.searchValue;
-
-    if(this.searchValue){
-      this.radioButtonValue = this.searchService.radioButtonValue;
-      //console.log(this.searchValue);
-      //console.log(this.radioButtonValue);
-
-      if(this.radioButtonValue ==="age"){
-        for(this.user of this.arrayOfUsers){
-          // @ts-ignore
-          this.userAge = this.user.dob.age
-          if(this.userAge == this.searchValue){
-            this.arrayOfSearchUsers.push(this.user)
-
-
-          }
-
-        }
-
-      }
-
-
-      //console.log(this.searchValue);
+    this.searchUsers = this.searchService.arrayOfSearchUsers;
+    if(this.searchUsers.length > 0){
+      this.arrayOfUsers = this.searchService.arrayOfSearchUsers;
 
     }
-    console.log(this.arrayOfSearchUsers)
 
   }
-
 
   deleteUser(){
     console.log("Delete");
