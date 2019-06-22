@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAAC,UAAW;EAET,OAAO,EAAE,IAAI;EACb,qBAAqB,EAAE,GAAG;EAC1B,kBAAkB,EAAE,QAAQ;EAG7B,WAAW,EAAE,KAAK;EAClB,KAAK,EAAE,OAAkB",
+"mappings": "AAAC,UAAW;EAET,OAAO,EAAE,IAAI;EACb,qBAAqB,EAAE,GAAG;EAC1B,kBAAkB,EAAE,QAAQ;EAC5B,WAAW,EAAE,KAAK;EACnB,KAAK,EAAE,OAAkB",
 "sources": ["../../../../../%D0%A1%D0%B8%D0%BC%D0%BE/Interview-task/UsersManagement/src/app/app.component.scss"],
 "names": [],
 "file": "app.component.css"

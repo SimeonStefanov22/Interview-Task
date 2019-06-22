@@ -11,37 +11,46 @@ import {SafeUsersService} from "../services/safe-users.service";
 })
 export class ListUsersComponent implements OnInit {
   result: any;
-  arrayOfUsers: Array<Object>;
+  arrayOfUsers: Array<any>;
   searchUsers: Array<Object>;
-
-
+  arrayForDeleteFunction: Array<Object>;
 
   constructor(private httpClient: HttpClient,
               private usersService: ListUsersService,
               private safeUsersService: SafeUsersService,
-              private searchService: SearchService) { }
+              private searchService: SearchService) {
+  }
 
   ngOnInit() {
     this.usersService.getUsers()
       .subscribe(data => {
-        this.result = data
+        this.result = data;
         this.arrayOfUsers = this.result.results;
         console.log(this.arrayOfUsers);
         this.safeUsersService.safeUsers(this.arrayOfUsers);
 
       })
   }
-  ngDoCheck(){
+
+  ngDoCheck() {
     this.searchUsers = this.searchService.arrayOfSearchUsers;
-    if(this.searchUsers.length > 0){
-      this.arrayOfUsers = this.searchService.arrayOfSearchUsers;
+    if (this.searchUsers.length > 0) {
+      this.arrayOfUsers = this.searchUsers;
 
     }
 
   }
 
-  deleteUser(){
-    console.log("Delete");
+  deleteUser(userId, userEmail) {
+    this.arrayForDeleteFunction = this.arrayOfUsers
+      .filter(user => user.id.value !== userId);
+    this.arrayForDeleteFunction = this.arrayOfUsers
+      .filter(user => user.email !== userEmail);
+    this.arrayOfUsers = this.arrayForDeleteFunction;
+
+    console.log(this.arrayOfUsers.length);
+    
+
   }
 
 }

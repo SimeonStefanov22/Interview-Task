@@ -7,18 +7,15 @@ import {HttpClient} from "@angular/common/http";
 export class ListUsersService {
   listUsers: any;
   loadedUsers: any;
+  countGetUsers: string;
   constructor(private httpClient: HttpClient) { }
 
- getUsers(){
-   const url = "https://randomuser.me/api/?results=20";
-   this.listUsers = this.httpClient.get(url);
-   return this.listUsers;
-
+  getUsers(){
+    this.countGetUsers = "20";
+    const url =`https://randomuser.me/api/?results=${this.countGetUsers}`;
+    this.listUsers = this.httpClient.get(url);
+    return this.listUsers;
 
   }
- userRepo(){
-    this.loadedUsers = this.listUsers;
-    return this.loadedUsers;
 
- }
 }

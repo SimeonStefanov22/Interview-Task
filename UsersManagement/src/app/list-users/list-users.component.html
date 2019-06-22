@@ -20,7 +20,7 @@
     </section>
 
     <section class="deleteUser">
-      <span (click)="deleteUser()" id="{{user.id.value}}">X</span>
+      <span (click)="deleteUser(user.id.value, user.email)" id="{{user.id.value}}">X</span>
     </section>
 
   </article>
