@@ -34,9 +34,9 @@ export class ListUsersComponent implements OnInit {
 
   ngDoCheck() {
     this.searchUsers = this.searchService.arrayOfSearchUsers;
-    if (this.searchUsers.length > 0) {
-      this.arrayOfUsers = this.searchUsers;
+    if (this.searchUsers.length > 0 && this.arrayOfUsers.length !== 0) {
 
+      this.arrayOfUsers = this.searchUsers;
     }
 
   }
@@ -49,7 +49,7 @@ export class ListUsersComponent implements OnInit {
     this.arrayOfUsers = this.arrayForDeleteFunction;
 
     console.log(this.arrayOfUsers.length);
-    
+
 
   }
 

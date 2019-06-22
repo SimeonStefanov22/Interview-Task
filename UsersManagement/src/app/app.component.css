@@ -3,6 +3,19 @@
   grid-template-columns: 1fr;
   grid-template-rows: 1fr auto;
   font-family: Arial;
-  color: #707070; }
+  color: #707070;
+  margin: 0 25% 0 25%; }
+  @media (min-width: 1024px) {
+    .container {
+      padding: 0 25% 0 25%; } }
+  @media (min-width: 768px) {
+    .container {
+      margin: 0 10% 0 10%; } }
+  @media (min-width: 601px) {
+    .container {
+      margin: 0; } }
+  @media (max-width: 600px) {
+    .container {
+      margin: 0; } }
 
 /*# sourceMappingURL=app.component.css.map */

@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAAA,+EAA+E;AAC/E,CAAC;EACC,UAAU,EAAE,UAAU;;AAGxB,IAAI;EACF,OAAO,EAAE,WAAW",
+"mappings": "AAAA,+EAA+E;AAI/E,CAAC;EACC,UAAU,EAAE,UAAU",
 "sources": ["../../../../%D0%A1%D0%B8%D0%BC%D0%BE/Interview-task/UsersManagement/src/styles.scss"],
 "names": [],
 "file": "styles.css"

@@ -1,9 +1,29 @@
- .container {
+$breakpoint-phone: 600px;
+$breakpoint-small-tablet: 601px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;
 
-   display: grid;
-   grid-template-columns: 1fr;
-   grid-template-rows: 1fr auto;
-   font-family: Arial;
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr auto;
+  font-family: Arial;
   color: rgb(112, 112, 112);
+  margin: 0 25% 0 25%;
+
+
+
+  @media (min-width: $breakpoint-desktop) {
+    padding: 0 25% 0 25%;
+  }
+  @media (min-width: $breakpoint-tablet) {
+    margin: 0 10% 0 10%;
+  }
+  @media (min-width: $breakpoint-small-tablet){
+    margin: 0;
+  }
+  @media (max-width: $breakpoint-phone){
+    margin: 0;
+  }
 }
 

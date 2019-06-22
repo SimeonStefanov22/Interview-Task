@@ -1,27 +1,35 @@
 <main>
-  <article *ngFor="let user of arrayOfUsers">
-    <section class="image">
-      <img src="{{user.picture.thumbnail}}">
-    </section>
+ <div *ngIf="arrayOfUsers">
+   <article *ngFor="let user of arrayOfUsers">
+     <section class="image">
+       <img src="{{user.picture.thumbnail}}">
+     </section>
 
-    <section class="name">
-      <h4>Name</h4>
-      <p>{{user.name.title}} {{user.name.first}} {{user.name.last}}</p>
-    </section>
+     <section class="name">
+       <h4>Name</h4>
+       <p>{{user.name.title}} {{user.name.first}} {{user.name.last}}</p>
+     </section>
 
-    <section class="address">
-      <h4>Address</h4>
-      <p>{{user.location.street}} {{user.location.city}}</p>
-    </section>
+     <section class="address">
+       <h4>Address</h4>
+       <p>{{user.location.street}} {{user.location.city}}</p>
+     </section>
 
-    <section class="age">
-      <h4>Age</h4>
-      <p>{{user.dob.age}}</p>
-    </section>
+     <section class="age">
+       <h4>Age</h4>
+       <p>{{user.dob.age}}</p>
+     </section>
 
-    <section class="deleteUser">
-      <span (click)="deleteUser(user.id.value, user.email)" id="{{user.id.value}}">X</span>
-    </section>
+     <section class="deleteUser">
+       <span (click)="deleteUser(user.id.value, user.email)" id="{{user.id.value}}">X</span>
+     </section>
 
-  </article>
+   </article>
+ </div>
+
+  <div *ngIf="!arrayOfUsers">
+    <div class="loading">
+      <p>LOADING ...</p>
+    </div>
+  </div>
 </main>
