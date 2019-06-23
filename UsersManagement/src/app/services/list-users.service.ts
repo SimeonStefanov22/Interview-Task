@@ -6,7 +6,6 @@ import {HttpClient} from "@angular/common/http";
 })
 export class ListUsersService {
   listUsers: any;
-  loadedUsers: any;
   countGetUsers: string;
   constructor(private httpClient: HttpClient) { }
 
@@ -15,7 +14,5 @@ export class ListUsersService {
     const url =`https://randomuser.me/api/?results=${this.countGetUsers}`;
     this.listUsers = this.httpClient.get(url);
     return this.listUsers;
-
   }
-
 }

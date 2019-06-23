@@ -11,15 +11,10 @@ export class HeaderComponent implements OnInit {
   constructor(private searchService: SearchService) {
   }
 
-  ngOnInit() {
-
-  }
+  ngOnInit() {}
 
   searchForm(data) {
-
     this.searchService.search(data);
     console.log(data);
-
   }
-
 }

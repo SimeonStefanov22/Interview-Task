@@ -9,34 +9,42 @@ article {
   grid-template-columns: 1fr 2fr 2fr 1fr 3fr;
   border-bottom: 1px solid #a59b9b;
   padding: 0.5em 0.5em 0.5em 0.5em; }
+  @media (min-width: 230px) and (max-width: 767px) {
+    article {
+      display: block;
+      width: 100%;
+      position: relative; } }
   article .image {
     display: grid;
     justify-content: center;
-    align-content: center; }
+    align-content: center;
+    overflow: hidden; }
     article .image img {
       border-radius: 50%; }
-  article .name {
+  article .name, article .address, article .age {
     padding-left: 0.5em; }
-    article .name h4 {
+    @media (min-width: 230px) and (max-width: 767px) {
+      article .name, article .address, article .age {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        margin-top: 0.3em; } }
+    article .name h4, article .address h4, article .age h4 {
       margin: 0;
       font-size: 13px; }
-    article .name p {
+    article .name p, article .address p, article .age p {
       font-size: 12px;
       margin: 0; }
-  article .address h4 {
-    margin: 0;
-    font-size: 13px; }
-  article .address p {
-    font-size: 12px;
-    margin: 0; }
-  article .age h4 {
-    margin: 0;
-    font-size: 13px; }
-  article .age p {
-    font-size: 12px;
-    margin: 0; }
+      @media (min-width: 230px) and (max-width: 767px) {
+        article .name p, article .address p, article .age p {
+          padding-left: 0.2em; } }
   article .deleteUser {
     position: relative; }
+    @media (min-width: 230px) and (max-width: 767px) {
+      article .deleteUser {
+        position: absolute;
+        top: 1em;
+        right: 1em; } }
     article .deleteUser span {
       position: absolute;
       top: 0;

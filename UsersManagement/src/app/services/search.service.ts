@@ -1,12 +1,11 @@
 import {Injectable} from '@angular/core';
 import {ListUsersService} from "./list-users.service";
 import {SafeUsersService} from "./safe-users.service";
-import {NgForm} from "@angular/forms";
-
 
 @Injectable({
   providedIn: 'root'
 })
+
 export class SearchService {
   searchValue: string;
   radioButtonValue: string;
@@ -23,14 +22,11 @@ export class SearchService {
   fullName: string;
   titleAndFullName: string;
 
-
   constructor(private userService: ListUsersService,
               private safeUsersService: SafeUsersService) {
   }
 
-
   search(data) {
-
     this.searchValue = data.search;
 
     if (this.searchValue) {
@@ -40,9 +36,9 @@ export class SearchService {
       if (this.radioButtonValue === "age") {
         for (this.user of this.arrayOfUsers) {
           this.userAge = this.user.dob.age;
+
           if (this.userAge == this.searchValue) {
             this.arrayOfSearchUsers.push(this.user);
-            this.searchValue = "";
 
           }
 
@@ -59,12 +55,11 @@ export class SearchService {
             || this.streetAndCity === this.searchValue) {
             this.arrayOfSearchUsers.push(this.user);
           }
-
         }
+
       } else if (this.radioButtonValue === "") {
 
         for (this.user of this.arrayOfUsers) {
-
           this.title = this.user.name.title;
           this.firstName = this.user.name.first;
           this.lastName = this.user.name.last;
@@ -74,12 +69,9 @@ export class SearchService {
             || this.lastName === this.searchValue
             || this.fullName === this.searchValue
             || this.titleAndFullName === this.searchValue) {
-
             this.arrayOfSearchUsers.push(this.user)
           }
-
         }
-
       }
       return this.arrayOfSearchUsers;
     }

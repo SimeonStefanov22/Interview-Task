@@ -34,23 +34,20 @@ export class ListUsersComponent implements OnInit {
 
   ngDoCheck() {
     this.searchUsers = this.searchService.arrayOfSearchUsers;
-    if (this.searchUsers.length > 0 && this.arrayOfUsers.length !== 0) {
-
+    //if (this.searchUsers.length > 0 && this.arrayOfUsers.length !== 0) {
+    if (this.searchUsers.length > 0 && this.searchUsers.length < this.arrayOfUsers.length){
       this.arrayOfUsers = this.searchUsers;
     }
-
   }
 
-  deleteUser(userId, userEmail) {
+  deleteUser(userId, userEmail, dateRegisteredUser) {
     this.arrayForDeleteFunction = this.arrayOfUsers
-      .filter(user => user.id.value !== userId);
-    this.arrayForDeleteFunction = this.arrayOfUsers
-      .filter(user => user.email !== userEmail);
-    this.arrayOfUsers = this.arrayForDeleteFunction;
+      .filter(user => user.id.value !== userId
+        && user.email !== userEmail
+        && user.registered.date !== dateRegisteredUser);
 
+     this.arrayOfUsers =  this.arrayForDeleteFunction;
     console.log(this.arrayOfUsers.length);
-
-
+    console.log(this.arrayOfUsers);
   }
-
 }

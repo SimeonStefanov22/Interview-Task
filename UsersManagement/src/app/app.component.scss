@@ -1,7 +1,6 @@
-$breakpoint-phone: 600px;
-$breakpoint-small-tablet: 601px;
-$breakpoint-tablet: 768px;
-$breakpoint-desktop: 1024px;
+$breakpoint-phone-start: 230px;
+$breakpoint-tablet-end: 1023pxpx;
+$breakpoint-desktop-start: 1024px;
 
 .container {
   display: grid;
@@ -9,21 +8,14 @@ $breakpoint-desktop: 1024px;
   grid-template-rows: 1fr auto;
   font-family: Arial;
   color: rgb(112, 112, 112);
-  margin: 0 25% 0 25%;
 
+  @media (min-width: $breakpoint-phone-start) and(max-width: $breakpoint-tablet-end){
+    margin: 0;
+  }
 
-
-  @media (min-width: $breakpoint-desktop) {
+  @media (min-width: $breakpoint-desktop-start) {
     padding: 0 25% 0 25%;
   }
-  @media (min-width: $breakpoint-tablet) {
-    margin: 0 10% 0 10%;
-  }
-  @media (min-width: $breakpoint-small-tablet){
-    margin: 0;
-  }
-  @media (max-width: $breakpoint-phone){
-    margin: 0;
-  }
+
 }
 
