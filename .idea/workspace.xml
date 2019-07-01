@@ -3,28 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ddc43d72-4bc2-4f58-a712-6709e097abe3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsersManagement/src/.sass-cache/43a41adf8f72b556d65b2901504c347b5481936c/styles.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/UsersManagement/src/.sass-cache/43a41adf8f72b556d65b2901504c347b5481936c/styles.scssc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsersManagement/src/app/.sass-cache/f1afe2d326097c3cb6be4c4bdf3cd34012d7f4b3/app.component.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/UsersManagement/src/app/.sass-cache/f1afe2d326097c3cb6be4c4bdf3cd34012d7f4b3/app.component.scssc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsersManagement/src/app/app.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/UsersManagement/src/app/app.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsersManagement/src/app/app.component.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/UsersManagement/src/app/app.component.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsersManagement/src/app/app.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/UsersManagement/src/app/app.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsersManagement/src/app/header/.sass-cache/deb9ddcf014583b4c7048945da27536a663faf1d/header.component.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/UsersManagement/src/app/header/.sass-cache/deb9ddcf014583b4c7048945da27536a663faf1d/header.component.scssc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsersManagement/src/app/header/header.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/UsersManagement/src/app/header/header.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsersManagement/src/app/header/header.component.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/UsersManagement/src/app/header/header.component.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsersManagement/src/app/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/UsersManagement/src/app/header/header.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsersManagement/src/app/header/header.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/UsersManagement/src/app/header/header.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsersManagement/src/app/header/header.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/UsersManagement/src/app/header/header.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsersManagement/src/app/list-users/.sass-cache/68e469045435059795374a65161dca55332c64bd/list-users.component.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/UsersManagement/src/app/list-users/.sass-cache/68e469045435059795374a65161dca55332c64bd/list-users.component.scssc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsersManagement/src/app/list-users/list-users.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/UsersManagement/src/app/list-users/list-users.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsersManagement/src/app/list-users/list-users.component.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/UsersManagement/src/app/list-users/list-users.component.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsersManagement/src/app/list-users/list-users.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/UsersManagement/src/app/list-users/list-users.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsersManagement/src/app/list-users/list-users.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/UsersManagement/src/app/list-users/list-users.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsersManagement/src/app/list-users/list-users.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/UsersManagement/src/app/list-users/list-users.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsersManagement/src/app/services/list-users.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/UsersManagement/src/app/services/list-users.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsersManagement/src/app/services/safe-users.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/UsersManagement/src/app/services/safe-users.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsersManagement/src/app/services/search.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/UsersManagement/src/app/services/search.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsersManagement/src/styles.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/UsersManagement/src/styles.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UsersManagement/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/UsersManagement/src/styles.scss" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -40,8 +18,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/UsersManagement/src/app/services/search.service.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-51">
-              <caret line="15" column="41" lean-forward="true" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
+            <state relative-caret-position="221">
+              <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -53,7 +31,7 @@
         <entry file="file://$PROJECT_DIR$/UsersManagement/src/app/services/list-users.service.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="212">
-              <caret line="15" column="26" lean-forward="true" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+              <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
               <folding>
                 <element signature="e#0#43#0" expanded="true" />
               </folding>
@@ -64,7 +42,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/UsersManagement/src/app/list-users/list-users.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
+            <state relative-caret-position="391">
               <caret line="23" column="80" selection-start-line="23" selection-start-column="80" selection-end-line="23" selection-end-column="80" />
             </state>
           </provider>
@@ -73,8 +51,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/UsersManagement/src/app/list-users/list-users.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="50" column="35" lean-forward="true" selection-start-line="50" selection-start-column="35" selection-end-line="50" selection-end-column="35" />
+            <state relative-caret-position="782">
+              <caret line="50" column="35" selection-start-line="50" selection-start-column="35" selection-end-line="50" selection-end-column="35" />
               <folding>
                 <element signature="e#0#50#0" expanded="true" />
               </folding>
@@ -245,12 +223,13 @@
       <workItem from="1561105741078" duration="25616000" />
       <workItem from="1561187509975" duration="14539000" />
       <workItem from="1561206779523" duration="17095000" />
-      <workItem from="1561277939527" duration="15790000" />
+      <workItem from="1561277939527" duration="16571000" />
+      <workItem from="1561453340987" duration="627000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="154493000" />
+    <option name="totallyTimeSpent" value="155901000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -380,8 +359,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/UsersManagement/src/app/services/search.service.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-51">
-          <caret line="15" column="41" lean-forward="true" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
+        <state relative-caret-position="221">
+          <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
@@ -390,15 +369,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/UsersManagement/src/app/list-users/list-users.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
+        <state relative-caret-position="391">
           <caret line="23" column="80" selection-start-line="23" selection-start-column="80" selection-end-line="23" selection-end-column="80" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/UsersManagement/src/app/list-users/list-users.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="50" column="35" lean-forward="true" selection-start-line="50" selection-start-column="35" selection-end-line="50" selection-end-column="35" />
+        <state relative-caret-position="782">
+          <caret line="50" column="35" selection-start-line="50" selection-start-column="35" selection-end-line="50" selection-end-column="35" />
           <folding>
             <element signature="e#0#50#0" expanded="true" />
           </folding>
@@ -408,7 +387,7 @@
     <entry file="file://$PROJECT_DIR$/UsersManagement/src/app/services/list-users.service.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="212">
-          <caret line="15" column="26" lean-forward="true" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
           <folding>
             <element signature="e#0#43#0" expanded="true" />
           </folding>
