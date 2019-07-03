@@ -14,5 +14,6 @@ export class ListUsersService {
     const url =`https://randomuser.me/api/?results=${this.countGetUsers}`;
     this.listUsers = this.httpClient.get(url);
     return this.listUsers;
+    console.log(this.listUsers);
   }
 }
