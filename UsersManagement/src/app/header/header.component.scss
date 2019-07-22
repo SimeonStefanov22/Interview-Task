@@ -17,7 +17,7 @@ header{
 
 form{
   display:grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 2fr 1fr 1fr;
   grid-template-rows: 1fr;
   margin-bottom: 1.5em;
 
@@ -36,6 +36,10 @@ form{
     @media (min-width: $breakpoint-phone-start) and(max-width: $breakpoint-phone-end){
       margin-bottom: 0.5em;
     }
+  }
+
+  button{
+    color: rgb(112, 112, 112);
   }
 
   .radioButtons{

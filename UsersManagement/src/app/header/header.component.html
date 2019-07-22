@@ -11,9 +11,10 @@
                class="searchInput"
                type="text"
                placeholder="Search"
-               #searchModel="ngModel"
                ngModel>
       </div>
+
+      <button type="button" (click)="searchForm(search.value)">Search</button>
 
       <div class="radioButtons">
         <div class="button">

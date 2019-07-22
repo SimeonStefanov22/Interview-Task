@@ -34,7 +34,7 @@ export class ListUsersComponent implements OnInit {
 
   ngDoCheck() {
     this.searchUsers = this.searchService.arrayOfSearchUsers;
-    //if (this.searchUsers.length > 0 && this.arrayOfUsers.length !== 0) {
+
     if (this.searchUsers.length > 0 && this.searchUsers.length < this.arrayOfUsers.length){
       this.arrayOfUsers = this.searchUsers;
     }

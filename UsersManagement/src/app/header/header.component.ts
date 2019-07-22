@@ -8,13 +8,19 @@ import {SearchService} from "../services/search.service";
 })
 export class HeaderComponent implements OnInit {
 
+  searchData: string = "";
   constructor(private searchService: SearchService) {
   }
 
   ngOnInit() {}
 
   searchForm(data) {
-    this.searchService.search(data);
+    this.searchData = data;
+    this.searchService.search(this.searchData);
     console.log(data);
+    //this.searchData = "";
+    //console.log(this.searchData)
   }
+
+
 }
