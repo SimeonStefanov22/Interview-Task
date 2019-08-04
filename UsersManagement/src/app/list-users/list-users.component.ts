@@ -38,6 +38,7 @@ export class ListUsersComponent implements OnInit {
     if (this.searchUsers.length > 0 && this.searchUsers.length < this.arrayOfUsers.length){
       this.arrayOfUsers = this.searchUsers;
     }
+
   }
 
   deleteUser(userId, userEmail, dateRegisteredUser) {
@@ -50,4 +51,6 @@ export class ListUsersComponent implements OnInit {
     console.log(this.arrayOfUsers.length);
     console.log(this.arrayOfUsers);
   }
+
+
 }

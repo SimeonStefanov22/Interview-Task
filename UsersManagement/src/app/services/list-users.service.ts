@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
+import {HeaderComponent} from "../header/header.component";
 
 @Injectable({
   providedIn: 'root'
@@ -16,4 +17,5 @@ export class ListUsersService {
     return this.listUsers;
     console.log(this.listUsers);
   }
+
 }
